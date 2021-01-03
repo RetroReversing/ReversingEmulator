@@ -5,5 +5,5 @@ all:
 	cp -r ./libRetroReversing/websrc/dist ./release/websrc/
 	cd ./SameBoy && $(MAKE) libretro
 	cp ./SameBoy/libretro/*.dylib ./release/
-	cp *.app ./release/
+	cp -r *.app ./release/
 	cp *.sh ./release/
