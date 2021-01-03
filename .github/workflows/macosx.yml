@@ -3,14 +3,21 @@ name: MACOSX CI
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
   build:
-
-    runs-on: macos-latest
-
+    strategy:
+        fail-fast: false
+        matrix:
+          os: [macos-latest, windows-latest]
+          cc: [clang]
+          include:
+          - os: macos-latest
+            cc: clang
+          exclude:
+          - os: macos-latest
+            cc: gcc
+    runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v2
     - name: make
