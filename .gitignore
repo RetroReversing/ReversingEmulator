@@ -31,3 +31,8 @@ release
 *.exe
 *.out
 *.app
+.DS_Store
+*.gb
+*.gg
+*.sms
+*.sfc
