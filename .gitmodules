@@ -1,0 +1,6 @@
+[submodule "libRetroReversing"]
+	path = libRetroReversing
+	url = https://github.com/RetroReversing/libRetroReversing.git
+[submodule "SameBoy"]
+	path = SameBoy
+	url = https://github.com/RetroReversing/SameBoy.git
