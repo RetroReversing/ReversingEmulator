@@ -1,4 +1,8 @@
-name: amd64_windows_clang
+name: WINDOWS CI
+
+on:
+  push:
+    branches: [ main ]
 jobs:
   amd64_windows_clang:
     runs-on: windows-latest
