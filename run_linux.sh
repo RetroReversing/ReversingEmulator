@@ -19,4 +19,4 @@ fi
 echo $(pwd)
 echo $extension
 echo $RA_PATH -L $CORE \"$GAME\"
-$RA_PATH -L $CORE \"$GAME\"
+$RA_PATH -v -L $CORE \"$GAME\"
