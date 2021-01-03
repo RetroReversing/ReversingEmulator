@@ -7,3 +7,6 @@
 [submodule "Genesis-Plus-GX"]
 	path = Genesis-Plus-GX
 	url = https://github.com/RetroReversing/Genesis-Plus-GX.git
+[submodule "PokeMini"]
+	path = PokeMini
+	url = https://github.com/RetroReversing/PokeMini.git
