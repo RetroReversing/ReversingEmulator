@@ -4,3 +4,6 @@
 [submodule "SameBoy"]
 	path = SameBoy
 	url = https://github.com/RetroReversing/SameBoy.git
+[submodule "Genesis-Plus-GX"]
+	path = Genesis-Plus-GX
+	url = https://github.com/RetroReversing/Genesis-Plus-GX.git
