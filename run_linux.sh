@@ -3,8 +3,8 @@ GAME=$1
 filename=$(basename -- "$GAME")
 extension="${filename##*.}"
 filename="${filename%.*}"
-RA_PATH="/Applications/RetroArch.app/Contents/MacOS/RetroArch"
-COREEXT="dylib"
+RA_PATH="retroarch"
+COREEXT="so"
 CORE="sameboy_libretro.$COREEXT"
 if [ "$extension" = "gb" ]; then
     CORE="sameboy_libretro.$COREEXT"
@@ -19,4 +19,4 @@ fi
 echo $(pwd)
 echo $extension
 echo $RA_PATH -L $CORE \"$GAME\"
-$RA_PATH -v -L $CORE \"$GAME\"
+$RA_PATH -L $CORE \"$GAME\"
