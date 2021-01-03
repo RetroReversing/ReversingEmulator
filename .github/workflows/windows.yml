@@ -1,0 +1,14 @@
+name: amd64_windows_clang
+jobs:
+  amd64_windows_clang:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: msys2 {0}
+    steps:
+    - uses: actions/checkout@v2
+    - uses: msys2/setup-msys2@v2
+      with:
+        install: make mingw-w64-x86_64-clang
+    - run: clang --version
+    - run: make CC=clang
