@@ -1,4 +1,4 @@
-name: MACOSX CI
+name: MAIN CI
 
 on:
   push:
