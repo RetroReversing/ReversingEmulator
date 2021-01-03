@@ -10,3 +10,6 @@
 [submodule "PokeMini"]
 	path = PokeMini
 	url = https://github.com/RetroReversing/PokeMini.git
+[submodule "beetle-saturn-libretro"]
+	path = beetle-saturn-libretro
+	url = https://github.com/RetroReversing/beetle-saturn-libretro.git
