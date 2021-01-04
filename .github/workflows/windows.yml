@@ -11,13 +11,13 @@ jobs:
         shell: msys2 {0}
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
-      with:
-        node-version: '12'
     - uses: msys2/setup-msys2@v2
       with:
         install: make mingw-w64-x86_64-clang git
     - run: clang --version
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '12'
     - name: Web source build
       run: npm install
     - run: make all CC=clang
