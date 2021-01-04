@@ -31,4 +31,3 @@ jobs:
         name: reversing-emulator-canary-windows
         path: |
           release
-          libRetroReversing/websrc/dist
