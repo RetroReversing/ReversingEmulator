@@ -16,3 +16,9 @@ jobs:
         install: make mingw-w64-x86_64-clang git
     - run: clang --version
     - run: make CC=clang
+    - name: Archive production artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: reversing-emulator-canary-windows
+        path: |
+          release

@@ -10,3 +10,4 @@ all:
 	cd ./beetle-saturn-libretro && make && cp *.[ds][ylo]* ../release/
 	cp -r *.app ./release/
 	cp *.sh ./release/
+	cp *.bat ./release/
