@@ -20,6 +20,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v2
+    - name: Web source build
+      run: cd ./libRetroReversing/websrc && npm install && npm run production
     - name: make
       run: make
     - name: Archive production artifacts
