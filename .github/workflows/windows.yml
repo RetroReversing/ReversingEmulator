@@ -15,7 +15,6 @@ jobs:
       with:
         install: make mingw-w64-x86_64-clang git
     - run: clang --version
-    - run: node --version
     - uses: actions/setup-node@v2
       with:
         node-version: '12'
