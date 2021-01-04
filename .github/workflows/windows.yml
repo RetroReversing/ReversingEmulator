@@ -11,7 +11,7 @@ jobs:
         shell: msys2 {0}
     steps:
     - uses: actions/checkout@v2
-    - run: cd ./libRetroReversing/websrc && npm install && npm run production
+    - run: make web
     - uses: msys2/setup-msys2@v2
       with:
         install: make mingw-w64-x86_64-clang git

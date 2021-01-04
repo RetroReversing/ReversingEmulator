@@ -1,3 +1,8 @@
+web:
+	git submodule update --init --recursive
+	mkdir -p ./release/libRetroReversing/websrc/dist
+	cd ./libRetroReversing/websrc && npm install && npm run production
+
 all: 
 	git submodule update --init --recursive
 	mkdir -p ./release/libRetroReversing/websrc/dist
