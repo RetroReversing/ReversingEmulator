@@ -14,13 +14,13 @@ jobs:
     - uses: actions/setup-node@v2
       with:
         node-version: '12'
-    - name: Web source build
-      run: npm install
     - uses: msys2/setup-msys2@v2
       with:
         install: make mingw-w64-x86_64-clang git
     - run: clang --version
     - run: make CC=clang
+    - name: Web source build
+      run: npm install
     - name: Archive production artifacts
       uses: actions/upload-artifact@v2
       with:
