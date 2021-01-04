@@ -11,7 +11,9 @@ jobs:
         shell: msys2 {0}
     steps:
     - uses: actions/checkout@v2
-    - run: git submodule update --init --recursive
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '12'
     - name: Web source build
       run: npm install
     - uses: msys2/setup-msys2@v2
