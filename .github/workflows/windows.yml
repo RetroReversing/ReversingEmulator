@@ -19,7 +19,7 @@ jobs:
       with:
         node-version: '12'
     - name: Web source build
-      run: npm install
+      run: C:\hostedtoolcache\windows\node\12.20.0\x64\npm install
     - run: make all CC=clang
     - name: Archive production artifacts
       uses: actions/upload-artifact@v2
