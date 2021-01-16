@@ -13,6 +13,7 @@ all:
 	cd ./Genesis-Plus-GX/ && make && cp *.[ds][ylo]* ../release/
 	cd ./PokeMini/ && make && cp *.[ds][ylo]* ../release/
 	cd ./beetle-saturn-libretro && make && cp *.[ds][ylo]* ../release/
+	cd ./snes9x2010 && make && cp *.[ds][ylo]* ../release/
 	cp -r *.app ./release/
 	cp *.sh ./release/
 	cp *.bat ./release/

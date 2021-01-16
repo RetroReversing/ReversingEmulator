@@ -13,3 +13,6 @@
 [submodule "beetle-saturn-libretro"]
 	path = beetle-saturn-libretro
 	url = https://github.com/RetroReversing/beetle-saturn-libretro.git
+[submodule "snes9x2010"]
+	path = snes9x2010
+	url = https://github.com/RetroReversing/snes9x2010.git
