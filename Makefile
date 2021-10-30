@@ -3,7 +3,7 @@ all:
 	@make common
 	# cd ./libRetroReversing/websrc && npm install && npm run production
 	@make sameboy_core
-	cd ./Genesis-Plus-GX/ && make && cp *.[ds][ylo]* ../release/
+	@make genesis_core
 	cd ./PokeMini/ && make && cp *.[ds][ylo]* ../release/
 	cd ./beetle-saturn-libretro && make && cp *.[ds][ylo]* ../release/
 	# cd ./snes9x2010 && make && cp *.[ds][ylo]* ../release/
@@ -12,6 +12,7 @@ common:
 	@echo "Moving Common files"
 	mkdir -p ./release/libRetroReversing/websrc/dist
 	cp -r ./libRetroReversing/websrc/dist ./release/libRetroReversing/websrc/
+	cp -r ./libRetroReversing/export_templates ./release/libRetroReversing/export_templates/
 	cp *.sh ./release/
 	cp *.bat ./release/
 	cp -r *.app ./release/
@@ -20,6 +21,10 @@ sameboy_core:
 	cd ./SameBoy && "$(MAKE)" libretro
 	cp ./SameBoy/libretro/*.[ds][ylo]* ./release/ 2>/dev/null
 	@echo "SameBoy Core Built"
+genesis_core:
+	@echo "Building GenesisPlusDX for SMS and GG"
+	cd ./Genesis-Plus-GX/ && make && cp *.[ds][ylo]* ../release/
+	@echo "Genesis Core Built"
 clean:
 	cd ./SameBoy && "$(MAKE)" clean
 	cd ./Genesis-Plus-GX && "$(MAKE)" clean
