@@ -1,8 +1,17 @@
 
 # Windows Setup
 
+## Msys2 (recommended)
+Msys2 is the reccomended option for building on windows, gcc seems to work better than clang due to the use of experimetal filesystem header
+```
+pacman -S make git mingw-w64-x86_64-clang
+```
+
+---
 ## Windows subsystem for Linux
-Run installWSL.bat as administrator (right click run as..) to install Ubuntu under Windows, this make it easier to build the project.
+Only use WSL if you know you want to build the Linux version under Windows. When compiled this will only work with the Linux version of RetroArch.
+
+Run installWSL.bat as administrator (right click run as..) to install Ubuntu under Windows.
 
 On first install you might want to update the list of packages available in apt like so:
 ```
@@ -49,8 +58,3 @@ Or in Git Bash:
 export PATH=$PATH:/c/Users/All\ Users/chocolatey/bin:/c/Program\ Files/llvm/bin
 ```
 
-# Msys2
-Msys2 is the reccomended option for building on windows, gcc seems to work better than clang due dut use of experimetal filesystem header
-```
-pacman -S make git mingw-w64-x86_64-clang
-```
