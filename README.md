@@ -16,7 +16,9 @@ If you don't follow that step then you will get an error about missing files, ma
 # OS Specific Install
 
 ## MacOSX
+Make sure you have installed the package manager called **Homebrew** on your Mac and then run the following commands:
 ```
+brew install pkg-config libpng sdl freetype2 nasm
 make all
 ```
 

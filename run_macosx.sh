@@ -13,6 +13,8 @@ elif [ "$extension" = "gg" ]; then
     CORE="genesis_plus_gx_libretro.$COREEXT"
 elif [ "$extension" = "sms" ]; then
     CORE="genesis_plus_gx_libretro.$COREEXT"
+elif [ "$extension" = "z64" ]; then
+    CORE="libmupen64plus.$COREEXT"
 else
     echo "Unknown core for extension: $extension"
 fi
